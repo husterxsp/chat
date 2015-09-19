@@ -1,0 +1,35 @@
+<div class="container">
+    <h3>聊天页面</h3>
+    <div class="input-group">
+        <input type="text" class="form-control" placeholder="说点什么吧" id="message">
+        <span class="input-group-btn">
+        <button class="btn btn-default" type="button" id="sendChat">Go!</button>
+    </span>
+    </div>
+    <ul class="list-group list-message show" style="margin: 1rem 0;">
+    </ul>
+    <ul class="list-group list-message hide" style="margin: 1rem 0">
+    </ul>
+    <nav>
+        <ul class="pagination" style="float: right;margin-top: 0">
+            <li class="prev">
+                <a href="#" aria-label="Previous">
+                <span aria-hidden="true">&laquo;</span>
+                </a>
+            </li>
+            <li class="active pagination-list"><a href="#">1</a></li>
+            <li class="pagination-list"><a href="#">2</a></li>
+            <li class="pagination-list"><a href="#">3</a></li>
+            <li class="pagination-list"><a href="#">4</a></li>
+            <li class="pagination-list"><a href="#">5</a></li>
+            <li class="next">
+                <a href="#" aria-label="Next">
+                <span aria-hidden="true">&raquo;</span>
+                </a>
+            </li>
+        </ul>
+    </nav>
+</div>
+<script type="text/javascript" src="/js/xss.js"></script>
+<script type="text/javascript" src="/js/socket.io-1.2.0.js"></script>
+<script type="text/javascript" src="/js/message.js"></script>

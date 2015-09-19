@@ -1,0 +1,3 @@
+.list-message li:nth-child(odd) {
+    background-color: #e7e7e7;
+}
