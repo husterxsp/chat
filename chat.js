@@ -29,6 +29,8 @@ app.use(bodyParser.urlencoded({ extended: true }));
 app.use(express.static(path.join(__dirname, 'public')));
 app.use(session({
     secret: '5eb63bbbe01eeed093cb22bb8f5acdc3', // 建议使用 128 个字符的随机字符串hello world
+    resave: true,
+    saveUninitialized: true
 }));
 app.use('/', routes);
 
@@ -70,6 +72,6 @@ var getTime = function(){
     return hours + ":" + minutes + ":" + seconds;
 }
 
-http.listen(3000, function() {
-    console.log('listening on: ' + 3000);
+http.listen(app.get('port'), function() {
+    console.log('listening on: ' + app.get('port'));
 });

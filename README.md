@@ -14,3 +14,10 @@
 	```
 	node chat
 	``` 
+或者
+```
+npm start
+```
+
+###在线演示
+[http://chat-d1577.coding.io/](http://chat-d1577.coding.io/)
